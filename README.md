@@ -4,8 +4,6 @@
 
 <h1 align="center">โมดูลสำหรับปรับแต่ง Always On Display บน HyperOS-1</h1>
 
----
-
 ## รองรับอุปกรณ์
 
 - ทดสอบแล้วบนรุ่น VEUX
