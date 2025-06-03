@@ -2,8 +2,7 @@
 
 ![Preview AOD](https://drive.google.com/uc?id=1EujfYz6TpzbM9d5P7l8F1YqGgCp6IQdu)
 
-โมดูลสำหรับปรับแต่ง **AOD (Always On Display)** บน HyperOS1  
-เพิ่มกลุ่มรูปภาพพื่อความหลากหลายในการแสดงผล
+<h1 align="center">โมดูลสำหรับปรับแต่ง Always On Display บน HyperOS-1</h1>
 
 ---
 
