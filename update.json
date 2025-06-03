@@ -1,6 +1,6 @@
 {
   "version": "1.8.8",
   "versionCode": 188,
-  "ZipUrl": "https://github.com/ScotcsDuluka/HyperOS-Mods/releases/download/Always-On-DisplayV3/HyperOS-AOD.zip",
+  "zipUrl": "https://github.com/ScotcsDuluka/HyperOS-Mods/releases/download/Always-On-DisplayV3/HyperOS-AOD.zip",
   "changelog": "เพิ่มฟีเจอร์ใหม่ๆ ปรับปรุงเสถียรภาพ"
 }
