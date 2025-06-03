@@ -1,5 +1,5 @@
-# HyperOS-Mods
-
+# HyperOS Always On Display Mods
+![](https://drive.google.com/uc?id=1EkDHuTBH-HhvpHBBw-tYBaw1IdiolqQ2)
 โมดูลสำหรับปรับแต่ง **AOD (Always On Display)** บน HyperOS1  
 เพิ่มกลุ่มรูปภาพพื่อความหลากหลายในการแสดงผล
 
@@ -15,8 +15,8 @@
 
 ## ฟีเจอร์หลัก
 
-- เพิ่มกลุ่มรูปภาพใน AOD จาก 3 เป็น 5+
-- ปรับแต่ง AOD.apk ให้สามารถแสดงผลภาพได้หลากหลายขึ้น
+- เพิ่มกลุ่มรูปภาพใน AOD
+- ปรับแต่ง AOD.apk
 - รองรับการติดตั้งผ่าน Magisk โดยตรง ไม่ต้องแก้ไขด้วยตัวเอง
 
 ---
