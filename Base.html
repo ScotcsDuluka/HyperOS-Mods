@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Scotcs Duluka's Dev Portfolio - Android, Minecraft, Windows Modder." />
+  <meta name="author" content="Scotcs Duluka" />
+  <meta property="og:image" content="Profile_MIX.jpg" />
+  <title>Scotcs Duluka | Awesome Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet" />
+ <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Kanit', sans-serif;
+    }
+    body {
+      padding: 20px;
+      color: #ffffff;
+      background: none;
+      position: relative;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('https://scontent.furt1-1.fna.fbcdn.net/v/t39.30808-6/504962846_1227161035675126_9102259564403735905_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeEHgHegnrZqhg7vRmxUlPExO6ZydYH4vF47pnJ1gfi8XmLKQkACt8h3Dt2WMf_gFaN43NCwKBcdYTax4IFcihlG&_nc_ohc=E_yEXAc7tEAQ7kNvwGI8z9G&_nc_oc=Adlmm7jhOYnj6pouTapX6IqSG2zglFvkHG5R8E2gS_hSbid6JBT05f6y9Lj3XQo5MoE&_nc_zt=23&_nc_ht=scontent.furt1-1.fna&_nc_gid=t54wRR61Q1hbuM6DRydF6A&oh=00_AfS59OEi86EgoLz3SOpzf1NPlvlr1l47BTHM8UEiLMo_kw&oe=688D7333') no-repeat center center fixed;
+      background-size: cover;
+      filter: brightness(0.3) blur(6px);
+      z-index: -1;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      border-bottom: 2px solid #ffffff;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    header h1 {
+      font-size: 3rem;
+      text-shadow: 0 0 10px #ffffff;
+      animation: flicker 3s infinite alternate;
+    }
+    @keyframes flicker {
+      0%, 100% { text-shadow: 0 0 5px #ff00a5, 0 0 10px #1000ff; }
+      50% { text-shadow: 0 0 20px #8000ff, 0 0 30px #ff98be; }
+    }
+    nav a {
+      color: #cecece;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    section {
+      max-width: 900px;
+      margin: auto auto 40px;
+      background: #000000cc;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #fcfcfcaa;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: slideFadeIn 1s forwards;
+    }
+    section:nth-of-type(2) { animation-delay: 0.5s; }
+    section:nth-of-type(3) { animation-delay: 1s; }
+    section:nth-of-type(4) { animation-delay: 1.5s; }
+    @keyframes slideFadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: #222;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 0 10px #ffffff88;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ffffff;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      color: #ffffffaa;
+    }
+    .sparkle {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      background: #aeaeae;
+      border-radius: 50%;
+      opacity: 0.8;
+      pointer-events: none;
+      filter: drop-shadow(0 0 6px #ffffff);
+      animation: sparkleAnim 2s infinite alternate;
+      z-index: 1000;
+    }
+    @keyframes sparkleAnim {
+      from { opacity: 0.3; transform: scale(0.5) translateY(0); }
+      to { opacity: 1; transform: scale(1.5) translateY(-10px); }
+    }
+    #profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      box-shadow: 0 0 50px #ffffffaa;
+      animation: rotateSpin 3s ease-in-out infinite;
+    }
+    @keyframes rotateSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(1080deg); }
+    }
+    @media screen and (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      nav a { display: block; margin: 10px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img id="profile-pic" src="https://scontent.furt1-1.fna.fbcdn.net/v/t39.30808-1/489960903_1180139580377272_1086919632971064852_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeEO56xg9if596QXIwSARiM1w7aX_e7uvqrDtpf97u6-qu1MyERPfkQDl8g1E00n6Z6XFdIkoCx4zi9bLk2rcOZq&_nc_ohc=AYSFHMs8KUIQ7kNvwEfskIL&_nc_oc=AdmVwGIlEPFuxU-XbiyvAnLGTBZFM17JqJo1Ai2twYUtWAT2K1Y2tjHwsA_hed9xE6s&_nc_zt=24&_nc_ht=scontent.furt1-1.fna&_nc_gid=27MejKDIE75QJA77183Btg&oh=00_AfQjkVkiydi46_IUjLHKEdruV6iqvmlxZFLJAbPh0r5XBQ&oe=688D715A" alt="Profile MIX" />
+    <h1>Scotcs Duluka</h1>
+    <nav>ไ
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>👋 About Me</h2>
+    <p>Welcome to my world! I'm Mix, aka Scotcs Duluka, 15 years old — a Dev and modding enthusiast who’s been hacking hardware since childhood.</p>
+    <p>Expertise in Android Root, Minecraft Dev, Windows customization, and a bunch of other cool mods!</p>
+  </section>
+
+  <section id="projects">
+    <h2>🧪 Cool Projects</h2>
+    <div class="projects">
+      <div class="project-card" onclick="showProjectInfo('HyperOS-Mods', 'A module to customize Always On Display for HyperOS1 on rooted devices')">
+        <h3>🔧 HyperOS-Mods</h3>
+        <p>Module to customize Always On Display for HyperOS1 on rooted devices</p>
+      </div>
+      <div class="project-card" onclick="showProjectInfo('Minecraft Dev Tools', 'Powerful dev tools for modding Minecraft on steroids')">
+        <h3>🛠️ Minecraft Dev Tools</h3>
+        <p>Powerful dev tools for modding Minecraft on steroids</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>📫 Contact</h2>
+    <p>Hit me up on Discord: scotcs_duluka or GitHub: <a href="https://github.com/ScotcsDuluka" target="_blank" style="color:#ff00ff;">@ScotcsDuluka</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Scotcs Duluka - Made with 💻 + ☕</p>
+  </footer>
+
+  <script>
+    // ฟังก์ชันโชว์ข้อความโปรเจกต์แบบ alert
+    function showProjectInfo(title, description) {
+      alert(`Project: ${title}\n${description}`);
+    }
+
+    // สร้างสปาร์คเคิลแบบสุ่ม
+    function createSparkles(count) {
+      for (let i = 0; i < count; i++) {
+        const sparkle = document.createElement('div');
+        sparkle.classList.add('sparkle');
+        sparkle.style.top = Math.random() * window.innerHeight + 'px';
+        sparkle.style.left = Math.random() * window.innerWidth + 'px';
+        sparkle.style.animationDelay = (Math.random() * 2) + 's';
+
+        sparkle.addEventListener('mouseenter', () => {
+          sparkle.style.transform = 'scale(2)';
+          setTimeout(() => {
+            sparkle.style.transform = 'scale(1)';
+          }, 300);
+        });
+
+        document.body.appendChild(sparkle);
+      }
+    }
+
+    // แอนิเมชันเปิดหน้า สไลด์ + เฟดอิน
+    function animateSections() {
+      const sections = document.querySelectorAll('section');
+      sections.forEach((sec, i) => {
+        sec.style.animationDelay = (i * 0.5) + 's';
+        sec.style.opacity = '1';
+        sec.style.transform = 'translateY(0)';
+        sec.style.animationFillMode = 'forwards';
+        sec.style.animationName = 'slideFadeIn';
+        sec.style.animationDuration = '1s';
+      });
+    }
+
+    // โหลดเมื่อหน้าเว็บโหลดเสร็จ
+    window.addEventListener('load', () => {
+      createSparkles(50);
+      animateSections();
+    });
+  </script>
+</body>
+</html>
